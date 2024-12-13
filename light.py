@@ -1,6 +1,5 @@
 import math
 import matplotlib.pyplot as plt
-import numpy as np
 
 
 times = 1
@@ -14,18 +13,12 @@ plot_x = [0]
 pie_x = []
 
 
-
-
-
 def detectPlot_x():
 	if a in plot_x:
 		return 0
 	else:
 		pie_x.insert(len(pie_x), a)
 		
-
-
-
 
 
 while c < run_times:
@@ -40,9 +33,6 @@ while c < run_times:
 	d += 1
 
 
-
-
-
 max_plot_x = max(plot_x)
 
 #plot
@@ -52,13 +42,11 @@ plt.ylim(0, max_plot_x)
 plt.xlim(0, times)
 plt.title("plot")
 
-
 #pie
 
 plt.subplot(1, 2, 2)
 plt.pie(pie_x, labels= pie_x, autopct='%.1f%%')
 plt.title("pie")
-
 
 
 plt.show()
